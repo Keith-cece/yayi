@@ -1,0 +1,367 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"secondary-fixed-dim": "#b6c8de", "secondary-fixed": "#d2e4fb", "outline-variant": "#c1c7d0", "on-primary-fixed-variant": "#0a4a75", "secondary-container": "#d2e4fb", "tertiary-fixed-dim": "#f5bc6b", "primary-fixed": "#cfe5ff", "primary-container": "#88b9ea", "primary-fixed-dim": "#9acbfd", "on-background": "#191c1f", "inverse-surface": "#2e3134", "on-surface-variant": "#41474e", "on-tertiary-fixed-variant": "#633f00", primary: "#2d628e", "on-error-container": "#93000a", "on-secondary-container": "#556679", "surface-container-high": "#e7e8ec", surface: "#f9f9fd", background: "#f9f9fd", secondary: "#4f6073", "surface-bright": "#f9f9fd", "surface-dim": "#d9dade", "tertiary-container": "#e2ab5c", "tertiary-fixed": "#ffddb3", tertiary: "#80560b", "surface-variant": "#e2e2e6", "on-error": "#ffffff", outline: "#72787f", error: "#ba1a1a", "on-tertiary": "#ffffff", "on-primary-fixed": "#001d33", "surface-container-highest": "#e2e2e6", "on-secondary-fixed-variant": "#37485a", "surface-container": "#edeef2", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#0a1d2d", "on-secondary": "#ffffff", "on-tertiary-fixed": "#291800", "on-primary-container": "#084974", "on-surface": "#191c1f", "surface-tint": "#2d628e", "surface-container-low": "#f3f3f7", "on-tertiary-container": "#623f00", "on-primary": "#ffffff", "inverse-primary": "#9acbfd", "inverse-on-surface": "#f0f0f5", "error-container": "#ffdad6"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, fontFamily: {headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"], display: "Manrope"}}}};</script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-effect { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .ambient-shadow { box-shadow: 0 20px 40px rgba(0, 95, 172, 0.06); }
+        .primary-gradient { background: linear-gradient(135deg, #005dac 0%, #1976d2 100%); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-background selection:bg-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm dark:bg-slate-900/70 transition-all duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-xl font-bold text-blue-900 dark:text-white tracking-tight" style="">牙一齿科</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-manrope tracking-tight font-semibold text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 pb-1" href="#" style="">专家团队</a>
+<a class="font-manrope tracking-tight font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#" style="">牙科服务</a>
+<a class="font-manrope tracking-tight font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#" style="">关于我们</a>
+<a class="font-manrope tracking-tight font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#" style="">典型案例</a>
+<a class="font-manrope tracking-tight font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#" style="">预约就诊</a>
+</div>
+<button class="primary-gradient text-white px-6 py-2.5 rounded-lg font-semibold hover:scale-95 transition-transform duration-200" style="">预约咨询</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 mix-blend-overlay" data-alt="Modern high-end dental clinic interior with warm oak wood paneling, minimalist furniture, and soft cinematic natural light filtering through windows" src="https://lh3.googleusercontent.com/aida/ADBb0uiWObsvGGvNdEvo0ObaGlbTLw3qD_NhaULseuPHrP-Vp-Ghsf5NF-q4fJmp2LirKQ7xnQT5RbRK9vboKVrEW1rwQTeKYClmZDmBa5cq2eevlFWFswexppPiuVniU5ZDXf3l4QAOctX1334wtx_B_qOH8AeeuP2ylRoBdkyHFHRnyx5u-AZ8mRLOHl3NzD2EcfEwM7hpoAp84VeicsFlEF5gttdUnpp26_Wvw_hZigL-5c6AvajCviEJTDozU4IW9vv-zF1BgTTkCQ" style="">
+<div class="absolute inset-0 bg-gradient-to-r from-surface to-transparent opacity-80"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm tracking-wide" style="">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+                    JCI 国际标准金牌认证
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-background leading-tight tracking-tighter" style="">
+                    打破牙医恐惧，<br><span class="text-primary" style="">从牙一齿科开始</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-md leading-relaxed" style="">
+                    在杭州牙一齿科，我们将临床精度与款待式服务完美融合。由浙大博士领衔，为您打造专属的临床圣殿。
+                </p>
+<div class="flex gap-4">
+<button class="bg-[#2e7d32] text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all flex items-center gap-2" style="">
+                        立即预约 Book Now
+                        <span class="material-symbols-outlined" style="">calendar_today</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Core Experts Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-background tracking-tighter mb-4" style="">三甲专家全程亲诊</h2>
+<p class="text-on-surface-variant text-lg" style="">汇聚杭城顶尖医疗资源，为您提供跨学科的精准诊疗方案。</p>
+</div>
+<div class="h-1 w-32 bg-primary/20 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Dr. Wu -->
+<div class="group relative bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col md:flex-row gap-8 items-center ambient-shadow transition-all hover:-translate-y-2">
+<div class="w-full md:w-64 h-80 rounded-2xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of Dr. Wu, middle-aged male dentist in white medical coat with warm confident smile, clean background" src="https://lh3.googleusercontent.com/aida/ADBb0ujbvmBdEMdwKkJHbOu8dBwyQhy57naioCLaopmKxxcgqNuz2IdGRZG12xAG25rTzra3kDcOacpn4mMSIdVjja6JWLo4h8WpRtV-gr0M55uSXSgdqN6LbBalalvAYJSRilZ1bi83Nf3ytG-GQsRmqEF2MwXGXSylzdnya54lQehoys7WPgzEKcm2pyivWWu2SOz9CoOHkJg5i_O3dEbxYaw-3AOsZun1L_DKLX8gJmyIvSEkRKxyHESVT1d1_zW4YwDLLRuQdKCPlN8" style="">
+</div>
+<div class="space-y-4">
+<div class="space-y-1">
+<h3 class="text-3xl font-bold text-on-background" style="">武建潮</h3>
+<p class="text-primary font-semibold" style="">浙大医学院临床医学博士</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">medical_services</span>
+                                30余年口腔临床经验
+                            </li>
+<li class="flex items-center gap-2 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">emoji_events</span>
+                                获得5项国家级实用新型专利
+                            </li>
+<li class="flex items-center gap-2 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">verified_user</span>
+                                原省属三甲医院资深专家
+                            </li>
+</ul>
+</div>
+</div>
+<!-- Director Huang -->
+<div class="group relative bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col md:flex-row gap-8 items-center ambient-shadow transition-all hover:-translate-y-2">
+<div class="w-full md:w-64 h-80 rounded-2xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Director Huang, female dentist in elegant clinical attire, professional and empathetic expression, studio lighting" src="https://lh3.googleusercontent.com/aida/ADBb0ujxKMmN7UHgKX6P19IXKVkMdInzplafcNJ6Yb_mg_aLpbVyAFLcbT8xE3vbJNtJI6odg23RWWUsDXUuMR2QiGcBnUluM-Q_VOXkfH3AAY8WX0y8kwYTMkaZTcd5LWV46sjCzmtPSRfJQcFf31bwQPPg88w3x9NlpEW1xLlK_TDK0PQ1pmxCR3oUk_QseCn_3SL2wIt60JgY4KZyHbRs9El8cPl-VnSjzy1aAOxi1ZgMcE3Wk_twoY1rH_ne-pOIXAAf-3qx3ZAo_g" style="">
+</div>
+<div class="space-y-4">
+<div class="space-y-1">
+<h3 class="text-3xl font-bold text-on-background" style="">黄吉娜</h3>
+<p class="text-primary font-semibold" style="">正畸医学总监</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">psychology</span>
+                                资深隐形正畸认证专家
+                            </li>
+<li class="flex items-center gap-2 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">groups</span>
+                                累计正畸成功案例 5000+
+                            </li>
+<li class="flex items-center gap-2 text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">workspace_premium</span>
+                                专注青少年早矫与颜面管理
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<span class="text-primary font-bold tracking-widest uppercase text-sm" style="">Our Services</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-background mt-4 tracking-tight" style="">精细化诊疗中心</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl hover:bg-primary group transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white mb-6 block" style="">person_search</span>
+<h4 class="text-xl font-bold text-on-background group-hover:text-white mb-4" style="">成人正畸</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed" style="">数字化精准矫治，在无形中悄然改变微笑，提升面部轮廓曲线。</p>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl hover:bg-primary group transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white mb-6 block" style="">child_care</span>
+<h4 class="text-xl font-bold text-on-background group-hover:text-white mb-4" style="">儿童早矫</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed" style="">把握生长发育黄金期，纠正不良习惯，重塑孩子自信容颜。</p>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl hover:bg-primary group transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white mb-6 block" style="">spa</span>
+<h4 class="text-xl font-bold text-on-background group-hover:text-white mb-4" style="">舒心治疗</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed" style="">全流程无痛管理，打破牙医恐惧，让治疗如在SPA中心般放松。</p>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl hover:bg-primary group transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white mb-6 block" style="">dentistry</span>
+<h4 class="text-xl font-bold text-on-background group-hover:text-white mb-4" style="">全科口腔</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed" style="">从牙周护理到高难度种植，三甲级水准为您的全家口腔护航。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Bento Grid -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-8">
+<!-- Brand Story -->
+<div class="lg:col-span-6 bg-surface-container-low rounded-[2.5rem] p-12 flex flex-col justify-center">
+<h2 class="text-4xl font-extrabold text-on-background mb-8 tracking-tight leading-snug" style="">
+                        根植杭城，以医者之心<br>重塑口腔医疗美学
+                    </h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p class="" style="">牙一齿科品牌由武建潮博士创立。我们深信，医疗的本质不应是冰冷的器械，而是充满温度的关怀与对精度的极致追求。</p>
+<p class="" style="">占地300平米的艺术级诊疗中心，严格执行JCI国际医院认证标准。每一台手术、每一次消毒、每一份档案，都代表了我们对生命的敬畏。</p>
+</div>
+</div>
+<!-- Photo Gallery Grid -->
+<div class="lg:col-span-6 grid grid-cols-2 grid-rows-2 gap-4">
+<div class="col-span-2 row-span-1 rounded-[1.5rem] overflow-hidden ambient-shadow h-64">
+<img alt="牙一齿科荣誉展示" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujtRS8wqPDKtL32TLg4KbHxG-eTvkRkFsXFmkkCzTShD60mfgMQd2JXxlXizsoGWe9r0iAOtiExAcjYGbKfzaciN5eMkW3IaIOxvbJTOZB1brG9mDLAxrCgDIjitssMCXe8IK9pqemR3BZfetFIyuqNDDmTecWoxg41ssaxPDT7KotEd9SufcLgmS_vxpsCMYmc09F4W8up1PTgBwYyXoxynv9iFfYhZZpoasz3TQSFy9Gli5IDh4gFjKTshiavgtqQyHiDZdMicTY" style="">
+</div>
+<div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden ambient-shadow h-48">
+<img alt="诊疗室全景" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugTGeXnnsrviloIUPixMGmQUrpQ0CH4A7V4thlxGUK9ECpeUBPz4WBdV_7IlWmihViWYHy_8fNqstrMQhM5e3KnL7m-jAL0fCuNIil0j8J0E3MFs-9wGtJ_SQW5Sn1-r3CBDMqD8Qc5un4ZstlD9rCSinCLTyXqcSzo5tmbMVcOKjqOWzKXDHMuXzOU13wBVvvilzULa5QtSm8ANE_UNq0gztn43vFfBoJ75T4K5Z4h16siJ_S0Zp11OmZOxoR1cO7PQ_ghCGWtiJM" style="">
+</div>
+<div class="col-span-1 row-span-1 rounded-[1.5rem] overflow-hidden ambient-shadow h-48">
+<img alt="高端医疗设备" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujc4pnlhPTeHQH3GaOm55F9bKHQr4wU19tnUA3Om8evKcTAw6_VDSxWXBY5sJQnS4U9tb-qbBCIspzbHCqOkDBaAIcYWtea2Pv0rpRfOjxrN6JNYFpyfpIClzKW8_ARG2HQ41QFvphDVCftHk6cjpEbuB_XRpJBiMZyckG3HQ5NUz_qn6j7K36fD_RBEaddno_4KGVmAQZFahgYxmnXLVrkF_2IrCMKdIrLRsO-s5q8yn8bIvi1wV_N4AIWNmxVl7kBgL_JG7MkSvE" style="">
+</div>
+</div>
+</div>
+<!-- JCI Standards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-secondary-fixed text-on-secondary-fixed p-8 rounded-3xl flex flex-col justify-between ambient-shadow">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: &quot;FILL&quot; 1;">sanitizer</span>
+<h5 class="text-xl font-bold" style="">JCI国际感控标准</h5>
+<p class="opacity-80 mt-2" style="">严苛的十五道灭菌流程，杜绝交叉感染隐患。</p>
+</div>
+<div class="bg-primary-container text-on-primary-container p-8 rounded-3xl flex flex-col justify-between ambient-shadow">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: &quot;FILL&quot; 1;">biotech</span>
+<h5 class="text-xl font-bold" style="">数字化微创技术</h5>
+<p class="opacity-80 mt-2" style="">应用显微诊疗与3D导航，将创伤降低到毫厘之间。</p>
+</div>
+<div class="bg-tertiary-fixed text-on-tertiary-fixed p-8 rounded-3xl flex flex-col justify-between ambient-shadow">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: &quot;FILL&quot; 1;">favorite</span>
+<h5 class="text-xl font-bold" style="">人文款待服务</h5>
+<p class="opacity-80 mt-2" style="">一对一私人健康顾问，为您定制终身齿科管理计划。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Gallery -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center justify-between mb-16">
+<h2 class="text-4xl font-extrabold text-on-background tracking-tight" style="">典型案例鉴赏（先网上找的，后期再改）</h2>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" style="">
+<span class="material-symbols-outlined" style="">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" style="">
+<span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Case 1 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden ambient-shadow">
+<div class="grid grid-cols-2 h-48">
+<img class="w-full h-full object-cover" data-alt="Close up of uneven teeth before orthodontic treatment, clinical medical photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI4B9sQMNnz0c26u3uLzibMYvTZxUQm8ivZExW7szw-tcVcTm5Lkfl17gUMViWXeD617UcVRkqpj6YZ8VlXYVl58yYSmjNcoi726nGgL9PjcMHf6Go5Tq6pLfETagg8MZ-FuzvuicgHlazERB9rr0rXgBL_pokcDilCC_R5Ylyr54AypN3hvLPYvvxLeTSxzAhphPe_-WvEmCCw28R7TOAlMYygvq8CjxSfjW_P8pRYqnpOYIrqqQQl4nGrIyYPLyxmwRl_1a5GxFR" style="">
+<img class="w-full h-full object-cover" data-alt="Close up of perfectly aligned white teeth after orthodontic treatment, clinical medical photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR99Xn7VrOHLKBQuIEoXpz6Q84-K8Q_hGg369b5u7gxsVEXLLgBAnjDgDThZo2bDJIxbKX6o_TnGajSqs53IKpymszzeLAGjNn7l8amGduhIU0AgE91-GWIcGAFwUhqZjSx_Xi7sduEo0ucgbPYPkfKPpmuCl3LAzcGc80Anv7iU5_272f27MljIYDoS-kx5G7y5UZs-586dsJ2ODfnXhnBE3Pslo-EGbS_Oecg0wJdWkbrvAV4VmP6iqAONjNqkfgPDmBVTLaBYrQ" style="">
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-primary tracking-widest uppercase" style="">正畸矫正</span>
+<span class="text-[10px] text-on-surface-variant/60" style="">经患者授权展示</span>
+</div>
+<h4 class="font-bold text-xl mb-2" style="">骨性前突综合治疗</h4>
+<p class="text-sm text-on-surface-variant" style="">针对由于上下颌骨发育过度引起的嘴部突起，通过武博士专利技术实现不拔牙矫治。</p>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden ambient-shadow">
+<div class="grid grid-cols-2 h-48">
+<img class="w-full h-full object-cover" data-alt="Medical photo of severe underbite alignment in dental patient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpuBdgVxgLvwujT_ZMmObBB7zYPKOFBlIdP-YFfhuUxvD8a395zY0Qm5IRoqX9F6BmrqIS22SN4kCGjXhz0qr2-yrpYpPO0RI5ALvILOc7R-XBmiExkcJwfsuiJkuqzUUcwBQXRMgc8Uz-JIyBw_Ctv-gaijLwEzqxbo4Z00qEfjLyhZu5zGN-rPmnIkkAQ49TSBfi3nvKtqEprOWRtPvAO05XCng5paSvkxcb5XD-RYR2H2pEtier4tf_c_vCnOI6VBJV8GE53Rxz" style="">
+<img class="w-full h-full object-cover" data-alt="Medical photo of restored dental alignment after successful intervention" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLzhkxVrbvOAvAH_wQYCzdC3nHiNoqXerVNVrcIUW2hfvj6E00ry1pdhL6SPqTx-CgHgYiLkugR7JvwJs5qz0YgFXZKwL2RwKA_f6p0YAGFbt24bDKV_SRBoZ55pNcOKvCTSJF5EeofFPyUGf2pUvnaKnr5NTOaLVyDn_XZtB0peJHNfMGybwyjhOSM07EVrJrc90Pn8elmTidQ5McEtM5r1cEIPQegn9FdSWOwhZxDGdjKvbevfLc8v3L7WAfFm47AQ42xF0j8cwD" style="">
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-primary tracking-widest uppercase" style="">颜面管理</span>
+<span class="text-[10px] text-on-surface-variant/60" style="">经患者授权展示</span>
+</div>
+<h3 class="font-bold text-xl mb-2" style="">地包天反颌矫治</h3>
+<p class="text-sm text-on-surface-variant" style="">通过隐形矫治技术有效改善面中部凹陷，让侧颜线条恢复自然柔美。</p>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden ambient-shadow">
+<div class="grid grid-cols-2 h-48">
+<img class="w-full h-full object-cover" data-alt="Dental clinical photo showing gaps between teeth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-5TRoy_FXjCGvw-B93mGV1lRrHyRB00oho5xXAfzM1KWHfG8kDpqle_-UOmhNiStc8z_lPIZwdcinJCc-wr7YuwI58RRQ_PXOWWtA_a6-8zFc1JuBcIwhQ6fQEtR1mW8RXCIIWYwkZHf9-19ycQ1930kYUTrTJ2o9oD9sMg3wezkBcZor64e22s-iVO17luzuuh6CRr_aiVML9K-oReb1sJ44leOwI-L5YNq1FCKe1EEpXNFqSJKAIYJPtOFyRWYMsBByFgPQcPfV" style="">
+<img class="w-full h-full object-cover" data-alt="Dental photo showing perfect aesthetic smile restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWYszqbKN2hykg6097C8ebOnR0L9Ac0ggqxCG_D-j8N3SfsKj8_XI0DaRJW_fW75oI9OV-NoRLEsDC32vH0uZA0FXJ1Bug_AAhJyV2o5BvC3hXOS69zSOdsfTo5oGAFI3yh_kgs98EzBEvfNky36CrUnMoku7mFWGxrN5LBB7SEgr7plJa5-2bHRqaQEtr0sZU1looswZvYM1osSc3VaRd5gRti9LbI7w1X6PvdtVCjfdjRgc_PvJqNmkJAWjfGZBnnt35UjY_0S3H" style="">
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-primary tracking-widest uppercase" style="">美学修复</span>
+<span class="text-[10px] text-on-surface-variant/60" style="">经患者授权展示</span>
+</div>
+<h4 class="font-bold text-xl mb-2" style="">全瓷贴面微笑设计</h4>
+<p class="text-sm text-on-surface-variant" style="">运用DSD数码微笑设计，精准定制色泽与形态，打造原生级亮白齿色。</p>
+</div>
+</div>
+</div>
+<p class="text-center mt-12 text-on-surface-variant/60 text-sm flex items-center justify-center gap-2" style="">
+<span class="material-symbols-outlined text-sm" style="">info</span>
+                声明：所有案例图片均获得患者授权使用，并签署知情同意书。盗图必究。
+            </p>
+</div>
+</section>
+<!-- Appointment Center -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-[3rem] overflow-hidden ambient-shadow grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 md:p-20 flex flex-col justify-center">
+<h2 class="text-4xl font-extrabold text-on-background mb-4 tracking-tight" style="">开启您的私人诊疗预约</h2>
+<p class="text-on-surface-variant mb-12" style="">请留下您的基本信息，我们的健康顾问将在1小时内与您取得联系，为您安排专属专家面诊。</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant ml-2" style="">姓名 Patient Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-white transition-all" placeholder="输入您的真实姓名" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant ml-2" style="">手机 Phone Number</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-white transition-all" placeholder="输入11位手机号码" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant ml-2" style="">需求 Service Category</label>
+<select class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-white transition-all">
+<option>成人正畸</option>
+<option>儿童早矫</option>
+<option>舒心补牙/拔牙</option>
+<option>美学修复</option>
+<option>其他咨询</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant ml-2" style="">时间 Appointment Time</label>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-white transition-all" type="date">
+</div>
+</div>
+<button class="w-full primary-gradient text-white py-5 rounded-2xl font-bold text-xl shadow-lg hover:opacity-90 transition-all" style="">
+                            立即确认预约 Confirm Appointment
+                        </button>
+</form>
+</div>
+<div class="bg-primary-container relative flex flex-col justify-end p-12 overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="Abstract architectural shot of a clean modern lobby with high ceilings and clinical professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnbH6wkjZuSiCFCoVwZlbGIn1JkokyRGeWo2IynbYqpu8u5jrRS0u6SaGziIJAgxALNhWlw46x8yEowHLdFrKb0tXQfiE6Nh9FYO5m2ytQXRC2N0jdHJnA87gBwIdKoEKJsT8IdiaboR7If-epzISvEYFb-7UBQovCQIqadO_lHepDSpzMh_rlhhKFu2ekCr2aaeo-VKphkEz6VryqJqnKA0I9FZmFonEbwYBI29mK5tedD4lEgOezD61wkfE_tEp6f4Ok-Gf1GQq7" style="">
+<div class="relative z-10 space-y-8 text-white">
+<div class="space-y-2">
+<h4 class="text-2xl font-bold" style="">联系我们 Contact Info</h4>
+<p class="text-white/80" style="">专业、高效、透明，是我们的服务准则。</p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg" style="">location_on</span>
+<div>
+<p class="font-bold" style="">诊所地址</p>
+<p class="text-white/80" style="">浙江省杭州市余杭区武昌街道荆长路590-1-A</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg" style="">call</span>
+<div>
+<p class="font-bold" style="">咨询热线</p>
+<p class="text-white/80" style="">186 6814 7487</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg" style="">schedule</span>
+<div>
+<p class="font-bold" style="">营业时间</p>
+<p class="text-white/80" style="">周一至周日 09:00 - 18:00 (节假日无休)</p>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/20">
+<img class="w-full h-40 object-cover rounded-2xl grayscale contrast-125 opacity-60" data-alt="Stylized map showing the location in Hangzhou city center with professional branding markers" data-location="Hangzhou" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpyKWbFAckxv_gBvo8olAiL59Y3-FPglEed9Lo5GAXA2tl29QKCMlhlq6Yo6wxT7EImPt20RSqMUwXK4mZrtsL65Fv_wGc9EMFtaFLeVLF9mRblD_obvUF54lrSXYfFshW9yn604vSxKRKEiVUnH0-WbuuM_pPYFFlrgoaAJAAKA0ehCJo0enu9chY6OQLReETvg_BPjRh8ani6_spm4dXilWpTTNQANLE2X7ZbGNyusCimuyJrmQ1ajp7Lb3xXRNVysg6uAmX8o83" style="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full rounded-t-3xl mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-blue-900 dark:text-white mb-2" style="">Hangzhou Ya Yi Dental Clinic</div>
+<p class="font-manrope text-sm text-slate-500 dark:text-slate-400" style="">© 2023 Hangzhou Ya Yi Dental Clinic. JCI International Standard Accredited.</p>
+</div>
+<div class="flex flex-wrap gap-8 justify-center">
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-opacity" href="#" style="">Privacy Policy</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-opacity" href="#" style="">Terms of Service</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-opacity" href="#" style="">Patient Rights</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-opacity" href="#" style="">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>
